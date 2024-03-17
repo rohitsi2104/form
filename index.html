@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<title>Two Column Layout</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-side">
+        <div class="content">
+            <h2>VENDOR MANAGEMENT</h2>
+            <ul class= "ven" id="vendorList">
+                <li onclick="showForm('vendor1')">VENDOR INFORMATION</li>
+                <li onclick="showForm('vendor2')">BUDGET</li>
+                <li onclick="showForm('vendor3')">IT</li>
+                <li onclick="showForm('vendor4')">INFORSEC</li>
+                <li onclick="showForm('vendor5')">PRIVACY</li>
+                <li onclick="showForm('vendor6')">LEGAL</li>
+
+                <!-- Add more vendors as needed -->
+            </ul>
+        </div>
+    </div>
+    <div class="right-side">
+        
+        <div class="content" id="vendorForms">
+            <div class="forms">
+                <div id="vendorForms">
+                    <div id="vendor1Form" class="form-container">
+                        <h2>Vendor Information</h2>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName1" class="required">What is the vendor's full name?</label>
+                                <input type="text" id="vendor1FullName1" name="vendor1FullName1" placeholder="Enter vendor's full name" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget1" class="required">What is the vendor type?</label>
+                                <select id="vendor1Budget1" name="vendor1Budget1" required>
+                                    <option value="">Select vendor type</option>
+                                    <option value="option1">Software</option>
+                                    <option value="option2">Professional Services</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName2" class="required">What is the type of request?</label>
+                                <select id="vendor1FullName2" name="vendor1FullName2" required>
+                                    <option value="">Select type of request</option>
+                                    <option value="option1">New Vendor</option>
+                                    <option value="option2">Renewal</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget2" class="required">What is the name of software/service?</label>
+                                <input type="text" id="vendor1Budget2" name="vendor1Budget2" placeholder="name of software/service" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName3" class="required">Description of services</label>
+                                <input type="text" id="vendor1FullName3" name="vendor1FullName3" placeholder="Description" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget3" class="required">What is the vendor POC's Email Address?</label>
+                                <input type="text" id="vendor1Budget3" name="vendor1Budget3" placeholder="vendor POC's Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName3" class="required">What is the vendor location?</label>
+                                <input type="text" id="vendor1FullName3" name="vendor1FullName3" placeholder="vendor location" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget3" class="required">What is the deadline to Onboard this vendor?</label>
+                                <input type="text" id="vendor1Budget3" name="vendor1Budget3" placeholder="deadline to Onboard this vendor" required>
+                            </div>
+                        </div>
+                        <!-- Add more rows as needed -->
+                    </div>
+                    
+
+                    <div id="vendor2Form" class="form-container">
+                        <h2>Budget</h2>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName1" class="required">What is the budget spend for this vendor?</label>
+                                <input type="text" id="vendor1FullName1" name="vendor1FullName1" placeholder="budget spend for this vendor" required>
+                            </div>  
+                            <div class="form-column">
+                                <label for="vendor1Budget1" class="required">Who is the TaskUS POC(Email)?</label>
+                                <input type="text" id="vendor1Budget1" name="vendor1Budget1" placeholder="TaskUS POC(Email)" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName2" class="required">Which TaskUs entity the contract will be signed with?</label>
+                                <select id="vendor1FullName2" name="vendor1FullName2" required>
+                                    <option value="">Select one</option>
+                                    <option value="option1">TaskUs Holding Inc.</option>
+                                    <option value="option2">TaskUs USA, LLC</option>
+                                    <option value="option1">Ridiculously good outsourcing, Inc.</option>
+                                    <option value="option2">TaskUs Colombia SAS</option>
+                                    <option value="option1">TaskUs Greece single member private company</option>
+                                    <option value="option2">TaskUs india private limited</option>
+                                    <option value="option1">TaskUs Irelend private limited </option>
+                                    <option value="option2">TaskUs S.A. de C.V.</option>
+                                    <option value="option2">TaskUs Malaysia Sdn. Bhd</option>
+                                    <option value="option1">LizardBear Tasking Inc</option>
+                                    <option value="option2">TaskUs outsourcing philiphines, Ins.</option>
+                                    <option value="option1">TaskUs Holding, Inc. taiwan branch</option>
+                                    <option value="option2">TaskUs Limited</option>
+                                    <option value="option1">TaskUs Japan G.K.</option>
+                                    <option value="option2">TaskUs outsourcing Japan G.K.</option>
+                                    <option value="option1">TaskUs Poland Sp z.o.o.</option>
+                                    <option value="option2">TaskUs outsourcing S.R.L.</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget2" class="required">Which TaskUs Country will use the services?</label>
+                                <input type="text" id="vendor1Budget2" name="vendor1Budget2" placeholder="Country will use the services" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName3" class="required">Who will file the PR requisition for this spend?</label>
+                                <input type="text" id="vendor1FullName3" name="vendor1FullName3" placeholder="PR requisition for this spend" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget3" class="required">Who is the operational budget owner?</label>
+                                <input type="text" id="vendor1Budget3" name="vendor1Budget3" placeholder="operational budget owner" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName3" class="required">Is the budget approved by finance and included for this year's approved budget?</label>
+                                <input type="text" id="vendor1FullName3" name="vendor1FullName3" placeholder="yes/no" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget3" class="required">Name of the finance approver?</label>
+                                <input type="text" id="vendor1Budget3" name="vendor1Budget3" placeholder="finance approver" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName3" class="required">Procurment officer Name involved in this if present?</label>
+                                <input type="text" id="vendor1FullName3" name="vendor1FullName3" placeholder="Procurment officer Name involved in this if present" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget3" class="required">who will pay for the services?</label>
+                                <input type="text" id="vendor1Budget3" name="vendor1Budget3" placeholder="who will pay for the services" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName3" class="required">How long will the  engagement last?</label>
+                                <input type="text" id="vendor1FullName3" name="vendor1FullName3" placeholder="How long will the  engagement last" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget3" class="required">How many licences/ Resources are required?</label>
+                                <input type="text" id="vendor1Budget3" name="vendor1Budget3" placeholder="How many licences/ Resources are required" required>
+                            </div>
+                        </div>
+                        <!-- Add more fields as needed -->
+                    </div>
+
+
+                    <div id="vendor3Form" class="form-container">
+                        <h2>IT</h2>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName1" class="required">Has IT corp Apps been engaged in assisting with this Software?</label>
+                                <input type="text" id="vendor1FullName1" name="vendor1FullName1" placeholder="Enter vendor's full name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName2" class="required">Name of the IT core Apps POC?</label>
+                                <input type="text" id="vendor1FullName2" name="vendor1FullName2" placeholder="type of request" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName2" class="required">What TaskUs Problem is this product solving?</label>
+                                <input type="text" id="vendor1FullName2" name="vendor1FullName2" placeholder="type of request" required>
+                            </div>
+                        </div>
+                        
+                        <!-- Add more rows as needed -->
+                    </div>
+                    <!-- Add more forms as needed -->
+
+
+                    <div id="vendor4Form" class="form-container">
+                        <h2>Infosec</h2>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName1" class="required">Will this product/solution process TaskUs/Client data?</label>
+                                <input type="text" id="vendor1FullName1" name="vendor1FullName1" placeholder="Enter vendor's full name" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget1" class="required">Please provide which applications will be connected.?</label>
+                                <input type="text" id="vendor1Budget1" name="vendor1Budget1" placeholder="Enter budget spent" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName2" class="required">Will there be any integration required with other TaskUs application?</label>
+                                <input type="text" id="vendor1FullName2" name="vendor1FullName2" placeholder="type of request" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget2" class="required">Will the vendor provide ongoing support?</label>
+                                <input type="text" id="vendor1Budget2" name="vendor1Budget2" placeholder="name of software/service" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName3" class="required">Is this product capable of integrating with TaskUs PingID, Active Directory, Single Sign On, SAML etc.</label>
+                                <input type="text" id="vendor1FullName3" name="vendor1FullName3" placeholder="Description" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget3" class="required">How will the user accounts be managed within this product/solution?</label>
+                                <input type="text" id="vendor1Budget3" name="vendor1Budget3" placeholder="vendor POC's Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName3" class="required">Department Name?</label>
+                                <input type="text" id="vendor1FullName3" name="vendor1FullName3" placeholder="vendor location" required>
+                            </div>
+                        </div>
+                        <!-- Add more rows as needed -->
+                    </div>
+
+
+                    <div id="vendor5Form" class="form-container">
+                        <h2>Privacy</h2>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName1" class="required">Will TU employees' personal data be shared with the vendor?</label>
+                                <input type="text" id="vendor1FullName1" name="vendor1FullName1" placeholder="Enter vendor's full name" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget1" class="required">Jurisdiction/location of the TU employees whose personal data will be shared with the vendor?</label>
+                                <input type="text" id="vendor1Budget1" name="vendor1Budget1" placeholder="Enter budget spent" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName2" class="required">Will the vendor have access to Client's customers' PII data?</label>
+                                <input type="text" id="vendor1FullName2" name="vendor1FullName2" placeholder="type of request" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget2" class="required">What is the scope of service and the data flow in this arrangement?</label>
+                                <input type="text" id="vendor1Budget2" name="vendor1Budget2" placeholder="name of software/service" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName3" class="required">Please confirm the location / geography / jurisdiction of the client whose personal data will be shared.</label>
+                                <input type="text" id="vendor1FullName3" name="vendor1FullName3" placeholder="Description" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget3" class="required">Is the Client present in the EU or does it offer services within the EU?</label>
+                                <input type="text" id="vendor1Budget3" name="vendor1Budget3" placeholder="vendor POC's Email Address" required>
+                            </div>
+                        </div>
+                        
+                        <!-- Add more rows as needed -->
+                    </div>
+
+                    <div id="vendor6Form" class="form-container">
+                        <h2>Legal</h2>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName1" class="required">License to be used:?</label>
+                                <input type="text" id="vendor1FullName1" name="vendor1FullName1" placeholder="Enter vendor's full name" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget1" class="required">Will the vendor allow use and execution of our Master Service Agreement template?</label>
+                                <input type="text" id="vendor1Budget1" name="vendor1Budget1" placeholder="Enter budget spent" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName2" class="required">Owner of developed work:?</label>
+                                <input type="text" id="vendor1FullName2" name="vendor1FullName2" placeholder="type of request" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget2" class="required">Please provide performance metrics needed.?</label>
+                                <input type="text" id="vendor1Budget2" name="vendor1Budget2" placeholder="name of software/service" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-column">
+                                <label for="vendor1FullName3" class="required">Who owns the license to the tool?</label>
+                                <input type="text" id="vendor1FullName3" name="vendor1FullName3" placeholder="Description" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="vendor1Budget3" class="required">Do we have a right to terminate the subscription or contract prior to the end of the term without penalties?</label>
+                                <input type="text" id="vendor1Budget3" name="vendor1Budget3" placeholder="vendor POC's Email Address" required>
+                            </div>
+                        </div>
+                        
+                        <!-- Add more rows as needed -->
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

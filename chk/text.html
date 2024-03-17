@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="vendor1Form" class="form-container">
+            <div class="form-row">
+                <div class="form-column">
+                    <span class="question-mark" onclick="toggleLabel('vendor1FullName1Label')">?</span>
+                    <label for="vendor1FullName1" class="required-label truncated-label" id="vendor1FullName1Label">Vendor's Full Name 1: This is a long label that will be truncated by default</label>
+                    <input type="text" id="vendor1FullName1" name="vendor1FullName1" placeholder="Enter vendor's full name" required>
+                </div>
+                <!-- Add more fields as needed -->
+            </div>
+            <!-- Add more rows as needed -->
+        </div>
+        
+        
+        <script>
+            function toggleLabel(labelId) {
+                var label = document.getElementById(labelId);
+                if (label) {
+                    label.classList.toggle('truncated-label');
+                    label.classList.toggle('full-label');
+                }
+            }
+            
+        </script>
+    </body>
+</html>
